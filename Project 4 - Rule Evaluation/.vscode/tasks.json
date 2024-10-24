@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-g",
+				"${fileDirname}\\main.cpp",
+				"${fileDirname}\\Lexer.h",
+				"${fileDirname}\\Automata.h",
+				"${fileDirname}\\Automata.cpp",
+				"${fileDirname}\\Token.h",
+				"${fileDirname}\\Parser.h",
+				"${fileDirname}\\Parser.cpp",
+				"${fileDirname}\\Grammar.h",
+				"${fileDirname}\\Grammar.cpp",
+				"${fileDirname}\\Database.h",
+				"${fileDirname}\\Interpreter.h",
+				"${fileDirname}\\Interpreter.cpp",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
